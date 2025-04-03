@@ -4,7 +4,7 @@
 	Edited 2020/2021/2022 by E. Steens and J. Wilmes
 *************************************************************/
 	// database implemented abstract because only one implementation required
-	    abstract class Database {
+	  abstract class Database {
 		private static $result 		= array();
 		private static $numrows 	= -1;
 		private static $currentrow 	= -1;
@@ -13,10 +13,10 @@
 		private static function dbConnect() {
             $dbhost		= "localhost";
             $dbname     = "db_spikspan";
-			$dbuser     = "root";
-			$dbpass     = '';
-            $conn		= "";           
-            $pdo		= "";             
+			      $dbuser     = "root";
+			      $dbpass     = '';
+            $conn		= "";             // connection string
+            $pdo		= "";             // handler
             $charset 	= 'utf8mb4';
 
             $conn = "mysql:host=" . $dbhost . "; dbname=" . $dbname . ";charset=". $charset;
