@@ -76,6 +76,9 @@ body {
 .dropdown-content a:hover {
     background-color: #f5f5f5;
 }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .contact-container {
     background: white;
     padding: 30px;
