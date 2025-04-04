@@ -4,7 +4,12 @@ body {
     min-height: 100vh;
     display: flex;
     font-family: Arial, sans-serif;
-    background-color:rgb(221, 231, 231)
+    background-image: url(images/achtergrond.png);
+    background-size: cover; /* Zorgt dat de afbeelding de hele pagina vult */
+    background-position: center; /* Centreert de afbeelding */
+    background-attachment: fixed;
+    image-resolution: 4k;
+   
 }
 
 .navbar {
@@ -13,7 +18,7 @@ body {
     justify-content: space-between;
     background-color: #070606;
     padding: 10px 20px;
-    border-bottom: 2px solid #ddd;
+
 
 }
 
