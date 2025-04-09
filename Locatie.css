@@ -104,13 +104,14 @@ body {
   /* Main */
   .main-content h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
     color: white;
     margin-left:0px ;
-    
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15); /* grotere schaduw */
 
-      
-   
 
   }
   
@@ -118,7 +119,11 @@ body {
     color: #ffffff;
     margin-bottom: 2rem;
     margin-left:0px ;
-  
+    background-color: #222222;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 20px;  
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15); /* grotere schaduw */
 
   }
   
@@ -138,22 +143,27 @@ body {
     margin-bottom: 1.5rem;
     color: white;
     margin-left:0px ;
+    background-color: #222222;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+    position: relative;
+    bottom: 350px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15); /* grotere schaduw */
+    
  
   }
   
-  .info h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-    ;
-    
-    
-  }
-  
   .map iframe {
-    border-radius: 2rem;
-    
     width: 600px;
+    margin-top: 50px;
+
+  }
+  .kaart {
+    width: 600px;
+    display: flex;
+    position: relative;
+    padding-left: 500px;
 
   }
 
