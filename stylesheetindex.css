@@ -156,4 +156,43 @@ body {
 }
 
 
+.faq-section {
+    max-width: 700px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+  }
 
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    color: #444;
+    padding-right: 1rem;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 200px;
+    margin-top: 0.5rem;
+  }
+
+  .faq-item.active .faq-question::after {
+    content: '–';
+  }
