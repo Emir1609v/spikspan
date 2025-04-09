@@ -4,64 +4,43 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit62e10e6c8df9afc192311b196c75bb33
+class ComposerStaticInit5726834464b54df5c26cde494ec31af2
 {
     public static $prefixLengthsPsr4 = array (
-        'Z' => 
-        array (
-            'ZipStream\\' => 10,
-        ),
         'P' => 
         array (
-            'Psr\\SimpleCache\\' => 16,
-            'Psr\\Http\\Message\\' => 17,
-            'Psr\\Http\\Client\\' => 16,
-            'PhpOffice\\PhpSpreadsheet\\' => 25,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
-        'M' => 
+        'E' => 
         array (
-            'Matrix\\' => 7,
+            'Endroid\\QrCode\\' => 15,
         ),
-        'C' => 
+        'D' => 
         array (
-            'Composer\\Pcre\\' => 14,
-            'Complex\\' => 8,
+            'DASPRiD\\Enum\\' => 13,
+        ),
+        'B' => 
+        array (
+            'BaconQrCode\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'ZipStream\\' => 
+        'PHPMailer\\PHPMailer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
-        'Psr\\SimpleCache\\' => 
+        'Endroid\\QrCode\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+            0 => __DIR__ . '/..' . '/endroid/qr-code/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'DASPRiD\\Enum\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/dasprid/enum/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'BaconQrCode\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-client/src',
-        ),
-        'PhpOffice\\PhpSpreadsheet\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
-        ),
-        'Matrix\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
-        ),
-        'Composer\\Pcre\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/pcre/src',
-        ),
-        'Complex\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
+            0 => __DIR__ . '/..' . '/bacon/bacon-qr-code/src',
         ),
     );
 
@@ -72,9 +51,9 @@ class ComposerStaticInit62e10e6c8df9afc192311b196c75bb33
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit62e10e6c8df9afc192311b196c75bb33::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit62e10e6c8df9afc192311b196c75bb33::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit62e10e6c8df9afc192311b196c75bb33::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5726834464b54df5c26cde494ec31af2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5726834464b54df5c26cde494ec31af2::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit5726834464b54df5c26cde494ec31af2::$classMap;
 
         }, null, ClassLoader::class);
     }
