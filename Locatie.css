@@ -4,8 +4,14 @@ body {
     min-height: 100vh;
     display: flex;
     font-family: Arial, sans-serif;
-    background-color:rgb(221, 231, 231)
-}
+    background-image: url(images/achtergrond2.png);
+    background-size: cover; /* Zorgt dat de afbeelding de hele pagina vult */
+    background-position: center; /* Centreert de afbeelding */
+    background-attachment: fixed;
+    image-resolution: 4k;
+    font-weight: bold;
+      }
+      
 
 .navbar {
     display: flex;
@@ -13,7 +19,6 @@ body {
     justify-content: space-between;
     background-color: #070606;
     padding: 10px 20px;
-    border-bottom: 2px solid #ddd;
 }
 
 .logo img {
@@ -100,18 +105,26 @@ body {
   .main-content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    ;
+    color: white;
+    margin-left:0px ;
+    
+
+      
+   
+
   }
   
   .intro-text {
-    color: #6b7280;
+    color: #ffffff;
     margin-bottom: 2rem;
+    margin-left:0px ;
+  
 
   }
   
   .grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr;
     gap: 2rem;
   }
   
@@ -123,19 +136,23 @@ body {
   
   .info section {
     margin-bottom: 1.5rem;
+    color: white;
+    margin-left:0px ;
+ 
   }
   
   .info h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    color: #111827;
+    color: #ffffff;
+    ;
+    
     
   }
   
   .map iframe {
-    border: 0;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    
     width: 600px;
 
   }
@@ -188,5 +205,8 @@ body {
 .info-column a:hover {
     color: white;
 }
+
+
+
   
 
