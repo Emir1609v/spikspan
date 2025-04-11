@@ -88,7 +88,7 @@ body {
     padding: 20px 0;
     background-color: #000000; 
     color: #ffffff;
-    position:fixed
+   
 }
 
 .container { 
@@ -156,6 +156,22 @@ body {
 }
 .card h2 {
     color: #d35400;
+}
+
+.registreer-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.registreer-button:hover {
+    background-color: #0056b3;
 }
 
 
