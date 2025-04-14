@@ -57,13 +57,13 @@ function sendEmail($toEmail, $userName, $qrFilePath) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';  
         $mail->SMTPAuth = true;
-        $mail->Username = 'emir1609v@gmail.com';  
-        $mail->Password = 'Valeria1609!'; 
+        $mail->Username = '';  
+        $mail->Password = ''; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         
-        $mail->setFrom('emir1609v@gmail.com', 'mailer');  
+        $mail->setFrom('', 'mailer');  
         $mail->addAddress($toEmail, $userName);  
 
         
