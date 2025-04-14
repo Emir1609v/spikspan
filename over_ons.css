@@ -1,42 +1,45 @@
-#body {
-    background: rgb(243, 242, 241);
-    margin: 0%;
-    border: 0%;
-    display: grid;
-    
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-.Over_spik_en_span {
-    display: flex;
-    height: 500px;
-    width: 100%;
-    border: solid red;
+header {
+    background-color: #f5f5f5;
+    color:#d35400;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: #464646;
+    padding :10px;
 }
 
-.spacing {
-    height: 20px;
-    width: 100%;
-    border: solid lightgray;
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.lvk_overwinningen {
-    display: flexbox;
-    height: 500px;
-    width: 100%;
-    border: solid lime;
+h1, h2 {
+    margin-bottom: 10px;
 }
 
-.images_over_ons {
-    width: 50px;
-    height: 150;
-    z-index: 10;
+p {
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
-#text_over_spik_en_span {
-    height: 250px;
-    width: 250px;
-    border: 10px;
-    margin: 5px;    
+.section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+    border-bottom: none;
 }
 
 .navbar {
@@ -45,7 +48,6 @@
     justify-content: space-between;
     background-color: #070606;
     padding: 10px 20px;
-    border-bottom: 2px solid #ddd;
 }
 
 .logo img {
@@ -112,13 +114,101 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+  
+  a {
+    color: #464646;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 
-.footer {
+  .footer {
     width: 105%;
     bottom: 0%;
     text-align: center;
     padding: 20px 0;
     background-color: #000000; 
     color: #ffffff;
-    position:fixed
+
+}
+
+.container {
+    flex: 1;
+}
+
+/* Info section styling */
+.info-section {
+    background-color: #0b0a0a;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Info columns */
+.info-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.info-column h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.info-column a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+.info-column a:hover {
+    color: white;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.team-lid {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-lid img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-lid h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.team-lid p {
+    font-size: 14px;
+    color: #555;
 }
