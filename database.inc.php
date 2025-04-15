@@ -11,12 +11,12 @@
 
 		
 		private static function dbConnect() {
-            $dbhost		= "localhost";
+            $dbhost			= "localhost";
             $dbname     = "db_spikspan";
 			      $dbuser     = "root";
 			      $dbpass     = '';
-            $conn		= "";             // connection string
-            $pdo		= "";             // handler
+            $conn				= "";             // connection string
+            $pdo				= "";             // handler
             $charset 	= 'utf8mb4';
 
             $conn = "mysql:host=" . $dbhost . "; dbname=" . $dbname . ";charset=". $charset;
