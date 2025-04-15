@@ -1,4 +1,10 @@
 <?php
+require "vendor/autoload.php"; // QR Code lib laden
+
+use Endroid\QrCode\QrCode;
+use Endroid\QrCode\Writer\PngWriter;
+use Endroid\QrCode\Logo\Logo;
+
 // Verbinden met database
 $mysqli = new mysqli("localhost", "root", "", "db_spikenspan");
 if ($mysqli->connect_error) {
@@ -6,18 +12,33 @@ if ($mysqli->connect_error) {
 }
 
 // Formulierdata ophalen
-$name = $_POST['name'];
-$email = $_POST['email'];
-$location = $_POST['location'];
+$name = $_POST['name'] ?? "Onbekend";
+$email = $_POST['email'] ?? "";
+$location = $_POST['location'] ?? "Onbekend";
 $tickets = (int)$_POST['tickets'];
 $total = $tickets * 10;
 
-
+// QR-inhoud maken
 $qrText = "Naam: $name\nEmail: $email\nTickets: $tickets\nPlaats: $location\nTotaal: €$total";
 $filename = 'qr/' . uniqid('ticket_') . '.png';
 
+// QR-code genereren
+$qrCode = new QrCode($qrText);
+$writer = new PngWriter();
 
-// Opslaan in database
+// Logo toevoegen als het bestaat
+$logoPath = "spikspan.png";
+if (file_exists($logoPath)) {
+    $logo = new Logo($logoPath, 50, 50);
+    $result = $writer->write($qrCode, $logo);
+} else {
+    $result = $writer->write($qrCode);
+}
+
+// QR-code opslaan
+$result->saveToFile($filename);
+
+// Gegevens in database opslaan
 $stmt = $mysqli->prepare("INSERT INTO tickets (name, email, location, num_tickets, total_price, qr_path) VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("sssids", $name, $email, $location, $tickets, $total, $filename);
 $stmt->execute();
@@ -79,3 +100,4 @@ $stmt->execute();
   </div>
 </body>
 </html>
+

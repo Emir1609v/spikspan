@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="tickets.css">
 <body>
   
-  <form action="bestel2.php" method="POST">
+  <form action="bestel.php" method="POST">
   <h2>Bestel je tickets</h2>
     <label>Voornaam: <input type="text" name="name" value="naam" required></label><br>
     <label>Achternaam: <input type="text" name="name" value="achternaam" required></label><br>
