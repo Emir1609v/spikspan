@@ -9,19 +9,36 @@
 <body>
     
 
-<form id="tickets" action="generate.php" method="post">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="tickets" action="bestel.php" method="post">
 <h2>Vul in je details</h2>
-  <label for="name">Name:</label>
-  <input type="text" id="name" value="John Doe">
+  <label for="name">Naam:</label>
+  <input type="text" id="name" value="je naam">
 
   <label for="email">Email:</label>
-  <input type="email" id="email" value="emir1609v@gmail.com">
+  <input type="email" id="email" value="je email">
 
-  <label for="age">Age:</label>
-  <input type="number" id="age" value="31">
+  <label for="age">Leeftijd:</label>
+  <input type="number" id="age" value="je leeftijd">
 
-  <label for="city">City:</label>
-  <input type="text" id="city" value="Ohio">
+  <label for="city">Provincie:</label>
+  <input type="text" id="city" value="provincie">
 
   <button type="submit">KOOP TICKETS</button>
 </form>
